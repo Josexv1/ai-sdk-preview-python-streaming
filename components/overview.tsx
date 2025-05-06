@@ -21,33 +21,7 @@ export const Overview = () => {
           <MessageIcon size={32} />
         </p>
         <p>
-          This is an{" "}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://github.com/vercel-labs/ai-sdk-preview-python-streaming"
-            target="_blank"
-          >
-            open source
-          </Link>{" "}
-          template that demonstrates the usage of{" "}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs/ai-sdk-ui/stream-protocol#data-stream-protocol"
-            target="_blank"
-          >
-            Data Stream Protocol
-          </Link>{" "}
-          to stream chat completions from a Python function (
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://fastapi.tiangolo.com"
-            target="_blank"
-          >
-            FastAPI
-          </Link>
-          ) along with the
-          <code className="rounded-md bg-muted px-1 py-0.5">useChat</code> hook
-          on the client to create a seamless chat experience.
+          AI Demo
         </p>
         <p>
           You can learn more about the AI SDK by visiting the{" "}
