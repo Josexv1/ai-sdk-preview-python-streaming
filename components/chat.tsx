@@ -7,6 +7,7 @@ import { useScrollToBottom } from "@/hooks/use-scroll-to-bottom";
 import { ToolInvocation } from "ai";
 import { useChat } from "ai/react";
 import { toast } from "sonner";
+import { useEffect } from "react";
 
 export function Chat() {
   const chatId = "001";
@@ -22,14 +23,18 @@ export function Chat() {
     stop,
   } = useChat({
     maxSteps: 4,
+    onFinish: (message) => {
+      console.log("[Chat] Finished processing message:", message);
+    },
     onError: (error) => {
-      if (error.message.includes("Too many requests")) {
-        toast.error(
-          "You are sending too many messages. Please try again later.",
-        );
-      }
+      console.error("[Chat] Error:", error);
+      toast.error(`An error occurred: ${error.message}`);
     },
   });
+
+  useEffect(() => {
+    console.log("[Chat] Messages array updated:", messages);
+  }, [messages]);
 
   const [messagesContainerRef, messagesEndRef] =
     useScrollToBottom<HTMLDivElement>();

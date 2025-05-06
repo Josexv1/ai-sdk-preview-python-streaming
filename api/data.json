@@ -1,0 +1,152 @@
+[
+  {
+    "reference": "00001",
+    "model": "LuminaLED-300",
+    "product_name": "LuminaLED-300",
+    "base_cost": 50.0,
+    "luminaire_type": "Square recessed",
+    "dimensions_mm": [310, 310, 50],
+    "power_w": 30,
+    "luminous_flux_lm": 3300,
+    "color_temperature_k": 4000,
+    "cri": 80,
+    "optics": "Opal lens, UGR<19",
+    "input_voltage": "230 V AC ±10% 50 Hz",
+    "power_factor": 0.90,
+    "lifetime_h": 50000,
+    "material": {
+      "body": "Die-cast aluminum",
+      "diffuser": "Opal PMMA",
+      "finish": "White polyester RAL 9016"
+    },
+    "ip_rating": "IP20",
+    "ik_rating": "IK04",
+    "control": ["DALI 1.0", "Optional presence sensor"],
+    "certifications": [
+      "EN 60598-1",
+      "Class II",
+      "CE (2014/35/EU, 2014/30/EU)"
+    ],
+    "warranty_years": 5
+  },
+  {
+    "reference": "00002",
+    "model": "LuminaLED-600",
+    "product_name": "LuminaLED-600",
+    "base_cost": 70.0,
+    "luminaire_type": "Round recessed",
+    "dimensions_mm": [600, 60],
+    "power_w": 50,
+    "luminous_flux_lm": 5500,
+    "color_temperature_k": 3000,
+    "cri": 85,
+    "optics": "Microprismatic diffuser, UGR<16",
+    "input_voltage": "230 V AC ±10% 50 Hz",
+    "power_factor": 0.92,
+    "lifetime_h": 60000,
+    "material": {
+      "body": "Extruded aluminum",
+      "diffuser": "Polycarbonate",
+      "finish": "Gray epoxy RAL 7035"
+    },
+    "ip_rating": "IP40",
+    "ik_rating": "IK06",
+    "control": ["Push-dim", "Casambi BLE"],
+    "certifications": [
+      "EN 60598-1",
+      "Class I",
+      "CE (2014/35/EU, 2014/30/EU)"
+    ],
+    "warranty_years": 3
+  },
+  {
+    "reference": "00003",
+    "model": "LuminaLED-1500L",
+    "product_name": "LuminaLED-1500L",
+    "base_cost": 80.0,
+    "luminaire_type": "Recessed linear",
+    "dimensions_mm": [1500, 90, 60],
+    "power_w": 45,
+    "luminous_flux_lm": 4200,
+    "color_temperature_k": 5000,
+    "cri": 80,
+    "optics": "Batwing lens, UGR<19",
+    "input_voltage": "230 V AC ±10% 50 Hz",
+    "power_factor": 0.95,
+    "lifetime_h": 50000,
+    "material": {
+      "body": "Aluminum",
+      "diffuser": "PMMA",
+      "finish": "Textured white"
+    },
+    "ip_rating": "IP20",
+    "ik_rating": "IK05",
+    "control": ["DALI 2.0"],
+    "certifications": [
+      "EN 60598-1",
+      "Class II",
+      "CE (2014/35/EU, 2014/30/EU)"
+    ],
+    "warranty_years": 5
+  },
+  {
+    "reference": "00004",
+    "model": "LuminaLED-45W-Downlight",
+    "product_name": "LuminaLED-45W-Downlight",
+    "base_cost": 65.0,
+    "luminaire_type": "Recessed downlight",
+    "dimensions_mm": [150, 70],
+    "power_w": 45,
+    "luminous_flux_lm": 4000,
+    "color_temperature_k": 3500,
+    "cri": 90,
+    "optics": "Anodized reflector, UGR<18",
+    "input_voltage": "230 V AC ±10% 50 Hz",
+    "power_factor": 0.88,
+    "lifetime_h": 40000,
+    "material": {
+      "body": "Aluminum alloy",
+      "diffuser": "Tempered glass",
+      "finish": "White RAL 9003"
+    },
+    "ip_rating": "IP44",
+    "ik_rating": "IK07",
+    "control": ["DALI 1.0", "Optional Casambi BLE"],
+    "certifications": [
+      "EN 60598-1",
+      "Class II",
+      "CE (2014/35/EU, 2014/30/EU)"
+    ],
+    "warranty_years": 5
+  },
+  {
+    "reference": "00005",
+    "model": "LuminaLED-60W-Panel",
+    "product_name": "LuminaLED-60W-Panel",
+    "base_cost": 90.0,
+    "luminaire_type": "Rectangular recessed panel",
+    "dimensions_mm": [1200, 300, 15],
+    "power_w": 60,
+    "luminous_flux_lm": 6000,
+    "color_temperature_k": 4000,
+    "cri": 85,
+    "optics": "Opal diffuser with microstructure",
+    "input_voltage": "230 V AC ±10% 50 Hz",
+    "power_factor": 0.93,
+    "lifetime_h": 50000,
+    "material": {
+      "body": "Steel sheet",
+      "diffuser": "Opal PMMA",
+      "finish": "Matte white"
+    },
+    "ip_rating": "IP20",
+    "ik_rating": "IK04",
+    "control": ["DALI 1.0"],
+    "certifications": [
+      "EN 60598-1",
+      "Class II",
+      "CE (2014/35/EU, 2014/30/EU)"
+    ],
+    "warranty_years": 5
+  }
+]

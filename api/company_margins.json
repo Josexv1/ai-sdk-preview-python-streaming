@@ -1,0 +1,20 @@
+{
+    "1": {
+        "company_name": "Coca-Cola",
+        "default_margin_percentage": 15,
+        "customer_id": "CUST-COKE-001",
+        "product_specific_margins": {}
+    },
+    "2": {
+        "company_name": "PepsiCo",
+        "default_margin_percentage": 12,
+        "customer_id": "CUST-PEPSI-002",
+        "product_specific_margins": {}
+    },
+    "3": {
+        "company_name": "Dr Pepper Snapple Group",
+        "default_margin_percentage": 10,
+        "customer_id": "CUST-DP-003",
+        "product_specific_margins": {}
+    }
+} 

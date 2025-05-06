@@ -2,6 +2,7 @@
 
 import type { Message } from "ai";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import { SparklesIcon } from "./icons";
 import { Markdown } from "./markdown";
@@ -11,11 +12,16 @@ import { Weather } from "./weather";
 
 export const PreviewMessage = ({
   message,
+  isLoading,
 }: {
   chatId: string;
   message: Message;
   isLoading: boolean;
 }) => {
+  useEffect(() => {
+    console.log(`[PreviewMessage ${message.id}] Updated:`, { message, isLoading });
+  }, [message, isLoading]);
+
   return (
     <motion.div
       className="w-full mx-auto max-w-3xl px-4 group/message"
@@ -54,7 +60,7 @@ export const PreviewMessage = ({
                       {toolName === "get_current_weather" ? (
                         <Weather weatherAtLocation={result} />
                       ) : (
-                        <pre>{JSON.stringify(result, null, 2)}</pre>
+                        null
                       )}
                     </div>
                   );
@@ -62,14 +68,27 @@ export const PreviewMessage = ({
                 return (
                   <div
                     key={toolCallId}
-                    className={cn({
-                      skeleton: ["get_current_weather"].includes(toolName),
-                    })}
+                    className="text-muted-foreground text-sm flex items-center gap-2"
                   >
-                    {toolName === "get_current_weather" ? <Weather /> : null}
+                    {toolName === "get_current_weather" ? (
+                      <Weather />
+                    ) : (
+                      <>
+                        <SparklesIcon size={14} />
+                        <span>{`Using tool: ${toolName}...`}</span>
+                      </>
+                    )}
                   </div>
                 );
               })}
+            </div>
+          )}
+
+          {/* Show processing message if content is missing but tools exist */}
+          {!message.content && message.toolInvocations && message.toolInvocations.length > 0 && (
+            <div className="text-muted-foreground text-sm flex items-center gap-2">
+              <SparklesIcon size={14} />
+              <span>Processing tool results...</span>
             </div>
           )}
 

@@ -1,0 +1,32 @@
+{
+    "00001": {
+        "name": "LuminaLED-300",
+        "stock": 40,
+        "restock_date": "2024-08-15",
+        "restocking_number": 200
+    },
+    "00002": {
+        "name": "LuminaLED-600",
+        "stock": 15,
+        "restock_date": "2024-08-20",
+        "restocking_number": 150
+    },
+    "00003": {
+        "name": "LuminaLED-1500L",
+        "stock": 5,
+        "restock_date": "2024-09-01",
+        "restocking_number": 100
+    },
+    "00004": {
+        "name": "LuminaLED-45W-Downlight",
+        "stock": 0,
+        "restock_date": "2024-09-10",
+        "restocking_number": 75
+    },
+    "00005": {
+        "name": "LuminaLED-60W-Panel",
+        "stock": 10,
+        "restock_date": "2024-09-15",
+        "restocking_number": 50
+    }
+} 
